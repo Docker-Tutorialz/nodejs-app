@@ -1,2 +1,4 @@
 # nodejs-app
-## `basic app`
+## `Building the first image based on NodeJS app`
+
+- 
