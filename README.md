@@ -1,4 +1,3 @@
-# nodejs-app
-## `Building the first image based on NodeJS app`
+## `Building the first image Docker based on NodeJS app`
 
 - 
