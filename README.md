@@ -1,26 +1,19 @@
 ## `Building the first image Docker based on NodeJS app`
 
+For this basic project, we will use `NodeJS` application to deploy a message on the browser exposing the port to stay visible for us.
+
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+This installation is based on LINUX Ubuntu, in this case to install please follow the steps below:
 
 ```bash
-pip install foobar
+$ apt install nodejs -y
 ```
 
 ## Usage
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+```bash
+$ node app.js
 ```
 
 ## Contributing
