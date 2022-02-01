@@ -12,9 +12,13 @@ $ apt install nodejs -y
 
 ## Usage
 
+Ensure you have executed the application locally using the command below:
+
 ```bash
 $ node app.js
 ```
+
+After this, please check on your web browser the address `http://192.168.1.100:3000/`. You can able to see the message `Olá MUNDO!` in portuguese.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
