@@ -20,18 +20,38 @@ $ node app.js
 
 After this, please check on your web browser the address `http://192.168.1.100:3000/`. You can able to see the message `Olá MUNDO!` in portuguese.
 
-## Build a Docker image using the NodeJS app
+## Build a Docker image using the nodejs image
 
 Now we can create a `Dockerfile` to deploy the Docker image:
 
 ```dockerfile
 FROM node
 WORKDIR /src
-COPY package*.json .
+COPY package*.json ./
 RUN npm install
 COPY . .
 EXPOSE 3000
 CMD ["node", "app.js"]
+```
+
+- After this step, please proceed wth the command below:
+
+```bash
+$ docker image build -t amauryborgesouza/nginx-apps:v1 .
+```
+
+- Check if the image is listed:
+
+```bash
+$ docker image ls
+REPOSITORY                    TAG       IMAGE ID       CREATED         SIZE
+amauryborgesouza/nginx-apps   v1        a3f7a1b38eed   5 seconds ago   999MB
+```
+
+- Now you can able to run the container:
+
+```bash
+$ docker container run -d -p 3000:3000 amauryborgesouza/nginx-apps:v1
 ```
 
 ## Contributing
