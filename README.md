@@ -54,7 +54,7 @@ amauryborgesouza/nginx-apps   v1        a3f7a1b38eed   5 seconds ago   999MB
 $ docker container run -d -p 3000:3000 amauryborgesouza/nginx-apps:v1
 ```
 
-- Push the image have created to Dockerhub:
+- Push the image you have created to Dockerhub:
 
 ```
 $ docker push  amauryborgesouza/nginx-apps:v1
